@@ -1,0 +1,10 @@
+<?php
+
+/*
+ * Load required JS/CSS components
+ */
+function jquery_livequery_js_load(  ) {
+      $path = drupal_get_path( 'module', 'jquery_livequery' );
+      drupal_add_js( $path . '/js/jquery.livequery.js' ); 
+}
+
