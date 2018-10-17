@@ -1,10 +1,18 @@
 <?php
 
-/*
- * Load required JS/CSS components
+/**
+ * Implements hook_library().
  */
-function jquery_livequery_js_load(  ) {
-      $path = drupal_get_path( 'module', 'jquery_livequery' );
-      drupal_add_js( $path . '/js/jquery.livequery.js' ); 
-}
+function jquery_livequery_library() {
+  $libraries = array();
 
+  $libraries['livequery'] = array(
+    'title' => 'Live Query',
+    'version' => '1.3.6',
+    'js' => array(
+      drupal_get_path('module', 'jquery_livequery') . '/js/jquery.livequery.min.js' => array(),
+    ),
+  );
+
+  return $libraries;
+}

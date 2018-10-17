@@ -2,8 +2,7 @@
 name = jQuery LiveQuery
 description = jQuery LiveQuery plugin packaged for Drupal.
 package = User interface
-core = 6.x
-version = "6.x-1.0"
+core = 7.x
+version = "7.x-1.0"
 
 dependencies[] = jquery_update
-
